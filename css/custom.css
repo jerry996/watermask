@@ -1,0 +1,9 @@
+.watermask_close{
+    width: 0px !important;
+}
+.watermask_open{
+    width: 100% !important;
+}
+.change-position{
+    position: absolute !important;
+}
