@@ -1,11 +1,6 @@
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     chrome.browserAction.setPopup({'tabId' : tab.id, 'popup' : 'popup.html'});
 
-  // if (tab.url.indexOf('baidu.com') >= 0) {
-    // chrome.browserAction.setPopup({'tabId' : tab.id, 'popup' : 'popup.html'});
-  // }else{
-  //   chrome.browserAction.setPopup({'tabId' : tab.id, 'popup' : 'not-found.html'});
-  // }
   // $.ajax({
   //   type: 'post',
   //   url: '***',
