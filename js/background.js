@@ -1,9 +1,11 @@
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
-  if (tab.url.indexOf('baidu.com') >= 0) {
     chrome.browserAction.setPopup({'tabId' : tab.id, 'popup' : 'popup.html'});
-  }else{
-    chrome.browserAction.setPopup({'tabId' : tab.id, 'popup' : 'not-found.html'});
-  }
+
+  // if (tab.url.indexOf('baidu.com') >= 0) {
+    // chrome.browserAction.setPopup({'tabId' : tab.id, 'popup' : 'popup.html'});
+  // }else{
+  //   chrome.browserAction.setPopup({'tabId' : tab.id, 'popup' : 'not-found.html'});
+  // }
   // $.ajax({
   //   type: 'post',
   //   url: '***',
